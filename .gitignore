@@ -2,3 +2,5 @@
 *.class
 *.eclipse
 *.project
+
+build.xml
