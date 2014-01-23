@@ -407,7 +407,8 @@ public class StandUpEntryWrapper implements StandUpEntry,
 		return new StandUpEntryWrapper((StandUpEntry)_standUpEntry.clone());
 	}
 
-	public int compareTo(StandUpEntry standUpEntry) {
+	public int compareTo(
+		com.liferay.support.standup.model.StandUpEntry standUpEntry) {
 		return _standUpEntry.compareTo(standUpEntry);
 	}
 
@@ -416,11 +417,11 @@ public class StandUpEntryWrapper implements StandUpEntry,
 		return _standUpEntry.hashCode();
 	}
 
-	public com.liferay.portal.model.CacheModel<StandUpEntry> toCacheModel() {
+	public com.liferay.portal.model.CacheModel<com.liferay.support.standup.model.StandUpEntry> toCacheModel() {
 		return _standUpEntry.toCacheModel();
 	}
 
-	public StandUpEntry toEscapedModel() {
+	public com.liferay.support.standup.model.StandUpEntry toEscapedModel() {
 		return new StandUpEntryWrapper(_standUpEntry.toEscapedModel());
 	}
 

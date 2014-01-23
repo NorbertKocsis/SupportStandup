@@ -332,7 +332,8 @@ public class GlobalInformationWrapper implements GlobalInformation,
 		return new GlobalInformationWrapper((GlobalInformation)_globalInformation.clone());
 	}
 
-	public int compareTo(GlobalInformation globalInformation) {
+	public int compareTo(
+		com.liferay.support.standup.model.GlobalInformation globalInformation) {
 		return _globalInformation.compareTo(globalInformation);
 	}
 
@@ -341,11 +342,11 @@ public class GlobalInformationWrapper implements GlobalInformation,
 		return _globalInformation.hashCode();
 	}
 
-	public com.liferay.portal.model.CacheModel<GlobalInformation> toCacheModel() {
+	public com.liferay.portal.model.CacheModel<com.liferay.support.standup.model.GlobalInformation> toCacheModel() {
 		return _globalInformation.toCacheModel();
 	}
 
-	public GlobalInformation toEscapedModel() {
+	public com.liferay.support.standup.model.GlobalInformation toEscapedModel() {
 		return new GlobalInformationWrapper(_globalInformation.toEscapedModel());
 	}
 
